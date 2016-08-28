@@ -86,4 +86,22 @@
         android:id="@+id/inrEd"
         />
 
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/valueEd"
+        android:text="Add"
+        android:id="@+id/add"
+        android:onClick="onClickAdd"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inrEd"
+        android:layout_marginLeft="100dp"
+        android:text="Buy History"
+        android:id="@+id/buyhisBtn"
+        android:onClick="onClickBuyHistory"/>
+
 </RelativeLayout>

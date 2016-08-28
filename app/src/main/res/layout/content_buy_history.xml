@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.ankit.exchangerate.BuyHistory"
+        tools:showIn="@layout/activity_buy_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+    <LinearLayout
+        android:id="@+id/lvh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal"
+        android:weightSum="6" >
+        <TextView
+            android:id="@+id/txtid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="SN"
+            android:background="#ffb6ffb0"
+            android:textColor="#000"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txtdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:gravity="center"
+            android:text="Date"
+            android:background="#ffc5ffe3"
+            android:textColor="#000"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txtcurrency"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:gravity="center"
+            android:text="Currency"
+            android:background="#ffd3f5ff"
+            android:textColor="#000"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txtqty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:gravity="center"
+            android:text="Qty"
+            android:background="#ffd3f5ff"
+            android:textColor="#000"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txtbuyvalue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:gravity="center"
+            android:text="BuyValue"
+            android:background="#ffd3f5ff"
+            android:textColor="#000"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txtcurrvalue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:gravity="center"
+            android:text="CurrentValue"
+            android:background="#ffd3f5ff"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/placeslist"
+            android:layout_width="match_parent"
+            android:layout_weight="9"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"></ListView>
+        <TextView
+            android:id="@+id/txtresulttext"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text=""
+            android:layout_weight="1"
+            android:textStyle="italic|bold"
+            android:textSize="13sp" />
+    </LinearLayout>

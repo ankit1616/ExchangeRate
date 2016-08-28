@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_new_record"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ankit.exchangerate.AddNewRecord">
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold"
+                android:textSize="26sp"
+                android:id="@+id/dateTv"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dateEt"
+                android:layout_marginLeft="100dp"/>
+
+            <TextView
+                android:text="Currency"
+                android:id="@+id/currencyTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold"
+                android:textSize="26sp"
+                android:layout_below="@id/dateTv" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/currrencyEt"
+                android:layout_marginLeft="150dp"
+                android:layout_below="@id/dateEt"/>
+
+            <TextView
+                android:text="Quantity"
+                android:id="@+id/quantityTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold"
+                android:textSize="26sp"
+                android:layout_below="@id/currencyTv"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/quantityEt"
+                android:layout_marginLeft="150dp"
+                android:layout_below="@id/currrencyEt"/>
+
+            <TextView
+                android:text="Buy Value"
+                android:id="@+id/buyvalueTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold"
+                android:textSize="26sp"
+                android:layout_below="@id/quantityTv"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buyvalueEt"
+                android:layout_marginLeft="150dp"
+                android:layout_below="@id/quantityEt"/>
+
+            <!--<TextView
+                android:text="Current Value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:textStyle="normal|bold"
+                android:id="@+id/currvalueTv"
+                android:layout_below="@id/buyvalueTv"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/currvalueEt"
+                android:layout_marginLeft="150dp"
+                android:layout_below="@id/buyvalueEt"/>-->
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSubmit"
+                android:text="Submit"
+                android:layout_below="@+id/buyvalueTv"
+                android:gravity="center" />
+
+
+
+
+
+</RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

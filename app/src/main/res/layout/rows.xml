@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/lvh"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal"
+            android:weightSum="6" >
+            <TextView
+                android:id="@+id/txtid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="1"
+                android:background="#ffb6ffb0"
+                android:textColor="#000"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/txtdate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:gravity="center"
+                android:text="Date"
+                android:background="#ffc5ffe3"
+                android:textColor="#000"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/txtcurrency"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:gravity="center"
+                android:text="Currency"
+                android:background="#ffd3f5ff"
+                android:textColor="#000"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/txtqty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:gravity="center"
+                android:text="Qty"
+                android:background="#ffd3f5ff"
+                android:textColor="#000"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/txtbuyvalue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:gravity="center"
+                android:text="BuyValue"
+                android:background="#ffd3f5ff"
+                android:textColor="#000"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/txtcurrvalue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:gravity="center"
+                android:text="LIVE"
+                android:background="#ffd3f5ff"
+                android:textColor="#000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+</LinearLayout>

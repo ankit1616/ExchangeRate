@@ -1,5 +1,6 @@
 package com.example.ankit.exchangerate;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     public static final String ACCESS_KEY = "63e94b6c7f1c181d141f6bab640a0295";
     public static final String BASE_URL = "http://apilayer.net/api/";
     public static final String ENDPOINT = "live";
+
+    Intent intent = new Intent(Intent.ACTION_DIAL);
 
     private Button getJSON;
     private EditText etamount, etcurrency;
@@ -122,5 +125,17 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+    public void onClickBuyHistory(View view) {
+        intent = new Intent(getApplicationContext(),BuyHistory.class);
+        startActivity(intent);
+
+    }
+
+    public void onClickAdd(View view) {
+        intent = new Intent(getApplicationContext(),AddNewRecord.class);
+        startActivity(intent);
     }
 }
